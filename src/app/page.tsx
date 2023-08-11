@@ -15,7 +15,8 @@ const Home = async () => {
     <main className="bg-core-stone text-core-jet">
       <section id="hero" className="p-xs lg:px-Dxs lg:py-sm">
         <h1 className="text-header-lg lg:text-header-lg-desktop">Lvan Ni</h1>
-        <h1 className="text-header-lg lg:hidden">_Design_Dev</h1>
+        <h1 className="text-header-lg lg:hidden">_Designer</h1>
+        <h1 className="text-header-lg lg:hidden">_Developer</h1>
         <h1 className="hidden lg:block lg:text-header-lg-desktop">
           _Designer_Developer
         </h1>
