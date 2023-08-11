@@ -1,15 +1,24 @@
-import { createClient } from "contentful"
+import { createClient } from "contentful";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID as string,
   accessToken: process.env.CONTENTFUL_ACCESS_TOKEN as string,
-})
+});
 
-const getPortfolioWebsite = async () => {
+const getPortfolioHome = async () => {
   const entries = await client.getEntries({
-    content_type: "portfolioWebsite",
+    content_type: "portfolioHome",
   });
   if (entries.items) return entries.items;
 };
 
-export default getPortfolioWebsite;
+const getPortfolioProjects = async () => {
+  const entries = await client.getEntries({
+    content_type: "portfolioProjectsPage",
+  });
+
+  const sortedEntries = entries.items.sort((a, b) => +b.fields.projectOrder! - +a.fields.projectOrder!);
+  if (sortedEntries) return sortedEntries;
+};
+
+export { getPortfolioHome, getPortfolioProjects };
