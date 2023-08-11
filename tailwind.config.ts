@@ -8,9 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        gillsans : ['Gill Sans', 'sans-serif'],
-    },
       fontSize: {
         '62': '62px', // Mobile Header Large
         '42': '42px', // Mobile Header Medium
@@ -26,7 +23,19 @@ const config: Config = {
         sm: '40px',
         md: '60px',
         lg: '70px',
-        xl: '32px',
+        Dxs: '80px',
+        Dsm: '100px',
+        Dmd: '120px',
+        Dlg: '160px',
+        Dxl: '200px',
+      },
+      colors: {
+        'primary-teal': '#004442',
+        'user-blue': '#2563eb',
+        'core-fog': '#fafafa',
+        'core-stone': '#f5f5f4',
+        'core-charcoal': '#262626',
+        'core-jet': '#0a0a0a',
       },
     },
   },
@@ -34,52 +43,42 @@ const config: Config = {
     function ({ addUtilities }) {
       const newUtilities = {
         '.text-logo': {
-          fontFamily: 'Gill Sans, sans-serif',
           fontSize: '18px',
           fontWeight: '700', // Bold
         },
         '.text-header-lg': {
-          // fontFamily: 'Space Grotesk, sans-serif',
           fontSize: '62px',
           fontWeight: '700', // Bold
         },
         '.text-header-md': {
-          // fontFamily: 'Space Grotesk, sans-serif',
           fontSize: '42px',
           fontWeight: '700', // Bold
         },
         '.text-body-lg': {
-          // fontFamily: 'Space Grotesk, sans-serif',
           fontSize: '18px',
           fontWeight: '500', // Medium
         },
         '.text-body-md': {
-          // fontFamily: 'Space Grotesk, sans-serif',
           fontSize: '14px',
           fontWeight: '500', // Medium
         },
         '.text-logo-desktop': {
-          fontFamily: 'Gill Sans, sans-serif',
           fontSize: '28px',
           fontWeight: '700', // Bold
         },
         '.text-header-lg-desktop': {
-          // fontFamily: 'Space Grotesk, sans-serif',
           fontSize: '84px',
           fontWeight: '700', // Bold
         },
         '.text-header-md-desktop': {
-          // fontFamily: 'Space Grotesk, sans-serif',
           fontSize: '58px',
           fontWeight: '700', // Bold
         },
         '.text-body-lg-desktop': {
-          // fontFamily: 'Space Grotesk, sans-serif',
           fontSize: '28px',
           fontWeight: '500', // Medium
         },
         '.text-body-md-desktop': {
-          // fontFamily: 'Space Grotesk, sans-serif',
           fontSize: '20px',
           fontWeight: '500', // Medium
         },

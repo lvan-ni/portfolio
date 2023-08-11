@@ -21,6 +21,14 @@ body {
 
 .email {
   border-radius: 25px;
-  border: 1px solid #000;
+  border: 1px solid #0a0a0a;
   padding: 10px 20px;
+}
+
+@media (min-width: 1024px) {
+  .email {
+    border-radius: 30px;
+    border: 2px solid #0a0a0a;
+    padding: 14px 40px;
+  }
 }
