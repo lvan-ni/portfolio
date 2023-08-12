@@ -19,7 +19,7 @@ const Header = () => {
   const handleScrollProjects = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const projectsSection = document.querySelector("#projects");
-    const offset = -70;
+    const offset = -90;
 
     if (projectsSection) {
       const top = (projectsSection as HTMLElement).offsetTop + offset;
@@ -33,7 +33,7 @@ const Header = () => {
   const handleScrollAbout = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const aboutSection = document.querySelector("#about");
-    const offset = -30;
+    const offset = -90;
 
     if (aboutSection) {
       const top = (aboutSection as HTMLElement).offsetTop + offset;

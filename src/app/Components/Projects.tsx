@@ -12,7 +12,7 @@ const Projects = async () => {
     <>
       <section className="px-xs py-sm md:px-sm md:py-xs lg:px-Dxs lg:py-md 2xl:px-Dxl">
         <h2
-          className="text-header-sm md:text-header-md lg:text-header-md-D"
+          className="text-header-md md:text-header-md-D lg:text-header-md-D"
           id="projects"
         >
           _Projects

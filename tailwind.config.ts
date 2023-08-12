@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 const config: Config = {
   content: [
@@ -9,6 +10,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': "320px",
+        's': "375px",
+        ...defaultTheme.screens,
+      },
       colors: {
         "primary-teal": "#004442",
         "user-blue": "#2563eb",
@@ -44,15 +50,15 @@ const config: Config = {
     plugin(function ({ addUtilities }) {
       const newUtilities = {
         ".text-header-lg": {
-          fontSize: "62px",
+          fontSize: "56px",
           fontWeight: "700", // Bold
         },
         ".text-header-md": {
-          fontSize: "42px",
+          fontSize: "32px",
           fontWeight: "700", // Bold
         },
         ".text-header": {
-          fontSize: "52px",
+          fontSize: "46px",
           fontWeight: "700", // Bold
         },
         ".text-header-sm": {
@@ -73,6 +79,10 @@ const config: Config = {
         },
         ".text-header-lg-D": {
           fontSize: "84px",
+          fontWeight: "700", // Bold
+        },
+        ".text-header-D": {
+          fontSize: "72px",
           fontWeight: "700", // Bold
         },
         ".text-header-md-D": {

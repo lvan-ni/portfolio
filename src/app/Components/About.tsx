@@ -19,14 +19,14 @@ const About = async () => {
     <>
       <section>
         <h2
-          className="text-header-sm py-sm px-xs md:text-header-md-D md:px-sm md:py-xs lg:px-Dxs 2xl:px-Dxl"
+          className="text-header-md py-sm px-xs md:text-header-md-D md:px-sm md:py-xs lg:px-Dxs 2xl:px-Dxl"
           id="about"
         >
           _About
         </h2>
       </section>
 
-      {/* ABOUT Mobile 640 */}
+      {/* ABOUT Mobile 320 */}
       <section className="p-xs md:hidden lg:hidden">
         {aboutImage && (
           <Image

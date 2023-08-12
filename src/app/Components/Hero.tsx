@@ -16,8 +16,8 @@ const Hero = async () => {
       {/* HERO Mobile */}
       <div className="md:hidden lg:hidden">
         <section className="p-xs">
-          <h1 className="text-header">Lvan Ni</h1>
-          <h1 className="text-header">_Design_Dev</h1>
+          <h1 className="text-header s:text-header-lg">Lvan Ni</h1>
+          <h1 className="text-header s:text-header-lg">_Design_Dev</h1>
         </section>
 
         <section className="p-xs">
@@ -39,10 +39,8 @@ const Hero = async () => {
       {/* HERO Tablet */}
       <div className="hidden md:block lg:hidden">
         <section className="md:px-sm md:py-xs">
-          <h1 className="text-header-lg">Lvan Ni</h1>
-          <h1 className="text-header-lg">
-            _Designer_Developer
-          </h1>
+          <h1 className="text-header-D">Lvan Ni</h1>
+          <h1 className="text-header-D">_Designer_Developer</h1>
         </section>
 
         <section className="px-sm py-xs">
@@ -65,9 +63,7 @@ const Hero = async () => {
       <div className="hidden lg:block">
         <section className="lg:px-Dxs lg:py-sm 2xl:px-Dxl">
           <h1 className="lg:text-header-lg-D">Lvan Ni</h1>
-          <h1 className="lg:text-header-lg-D">
-            _Designer_Developer
-          </h1>
+          <h1 className="lg:text-header-lg-D">_Designer_Developer</h1>
         </section>
 
         <section className="lg:px-Dxs lg:py-sm 2xl:px-Dxl">
