@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -22,7 +23,7 @@ const config: Config = {
         xs: "20px",
         sm: "40px",
         lg: "60px",
-        lg: "70px",
+        xl: "70px",
         Dxs: "80px",
         Dsm: "100px",
         Dmd: "120px",
@@ -40,7 +41,7 @@ const config: Config = {
     },
   },
   plugins: [
-    function ({ addUtilities }) {
+    plugin(function ({ addUtilities }) {
       const newUtilities = {
         ".text-logo": {
           fontSize: "18px",
@@ -83,8 +84,9 @@ const config: Config = {
           fontWeight: "500", // Medium
         },
       };
-      addUtilities(newUtilities, ["responsive", "hover"]);
-    },
+      addUtilities(newUtilities);
+    }),
   ],
 };
+
 export default config;
