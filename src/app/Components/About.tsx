@@ -19,7 +19,7 @@ const About = async () => {
     <>
       <section>
         <h2
-          className="text-header-md py-sm px-xs md:text-header-md-D md:px-sm md:py-xs lg:px-Dxs 2xl:px-Dxl"
+          className="text-header-sm py-sm px-xs md:text-header-md-D md:px-sm md:py-xs lg:px-Dxs 2xl:px-Dxl"
           id="about"
         >
           _About
@@ -34,7 +34,7 @@ const About = async () => {
             alt="Personal Photo"
             width={800}
             height={700}
-            className="px-md pb-md"
+            className="px-md pb-sm"
           />
         )}
         <div className="text-body-md">
