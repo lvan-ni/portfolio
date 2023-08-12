@@ -42,15 +42,15 @@ const Projects = async () => {
                 </div>
               </article>
 
-              {/* PROJECTS Desktop */}
+              {/* PROJECTS Laptop */}
               <article
                 key={project.sys.id + project.sys.space}
-                className="hidden lg:flex space-between px-Dlg py-sm "
+                className="hidden lg:flex space-between px-Dmd xl:px-Dlg py-sm "
               >
                 <Image
                   src={"https:" + TitleImage.fields.file.url}
                   alt="Project Title Image"
-                  width={700}
+                  width={500}
                   height={500}
                   className="p-sm"
                 />
