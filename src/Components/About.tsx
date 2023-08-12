@@ -35,7 +35,7 @@ const About = async () => {
             className="px-md pb-xs"
           />
         )}
-        <p className="text-body-md lg:text-body-lg-D">{documentToReactComponents(aboutContent)}</p>
+        <div className="text-body-md lg:text-body-lg-D">{documentToReactComponents(aboutContent)}</div>
       </section>
 
       {/* ABOUT Desktop */}
@@ -53,7 +53,7 @@ const About = async () => {
             )}
           </div>
           <div className="col-span-1">
-            <p className="text-body-md lg:text-body-md-D">{documentToReactComponents(aboutContent)}</p>
+            <div className="text-body-md lg:text-body-md-D">{documentToReactComponents(aboutContent)}</div>
           </div>
         </div>
       </section>

@@ -36,10 +36,10 @@ const Projects = async () => {
                 <h3 className="text-body-lg lg:text-body-lg-D my-xs">
                   {ProjectTitle}
                 </h3>
-                <p className="text-body-lg lg:text-body-md-D">
+                <div className="text-body-lg lg:text-body-md-D">
                   {ProjectDescription &&
                     documentToReactComponents(ProjectDescription)}
-                </p>
+                </div>
               </article>
 
               {/* PROJECTS Desktop */}
@@ -58,10 +58,10 @@ const Projects = async () => {
                   <h3 className="text-body-lg lg:text-body-lg-D my-xs">
                     {ProjectTitle}
                   </h3>
-                  <p className="text-body-lg lg:text-body-md-D">
+                  <div className="text-body-lg lg:text-body-md-D">
                     {ProjectDescription &&
                       documentToReactComponents(ProjectDescription)}
-                  </p>
+                  </div>
                 </div>
               </article>
             </>
