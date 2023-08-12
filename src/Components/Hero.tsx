@@ -1,12 +1,13 @@
 import React from "react";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { getPortfolioHome } from "@/lib/contentful";
 
 const Hero = async () => {
-  const data = await getPortfolioHome();
+  const data = await getPortfolioHome(process.env.CONTENTFUL_PORTFOLIO_HOME_ID as string);
   if (!data) return null;
 
-  const { introContent } = data[0].fields;
-  const IntroText = introContent?.content[0].content[0].value;
+  const { introContent } = data;
+  if (!introContent) return null;
 
   return (
     <>
@@ -20,7 +21,7 @@ const Hero = async () => {
       </section>
 
       <section className="p-xs lg:px-Dxs lg:py-sm">
-        <h3 className="text-body-lg lg:text-body-lg-D">{IntroText}</h3>
+        <h3 className="text-body-lg lg:text-body-lg-D">{documentToReactComponents(introContent)}</h3>
       </section>
 
       <section className="p-xs lg:px-Dxs lg:py-sm">

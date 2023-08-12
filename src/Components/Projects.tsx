@@ -1,10 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { IImage } from "@/Interface/IImage";
 import { getPortfolioProjects } from "@/lib/contentful";
 
 const Projects = async () => {
   const projects = await getPortfolioProjects();
   if (!projects) return null;
+  
 
   return (
     <>
@@ -17,16 +20,19 @@ const Projects = async () => {
       <section>
         {projects.map((project) => {
           const ProjectTitle = project.fields.projectTitle?.toString();
+          // const ProjectDescription =
+          //   project.fields.description?.content[0].content[0].value;
           const ProjectDescription =
-            project.fields.description?.content[0].content[0].value;
-          const TitleImageURL = project.fields.titleImage?.fields.file.url;
+          project.fields.description;
+          // const TitleImageURL = project.fields.titleImage?.fields.file.url;
+          const TitleImage = project.fields.titleImage as IImage;
 
           return (
             <>
               {/* PROJECTS Mobile */}
               <article key={project.sys.id} className="p-xs lg:hidden">
                 <Image
-                  src={"https:" + TitleImageURL}
+                  src={"https:" + TitleImage.fields.file.url}
                   alt="Project Title Image"
                   width={800}
                   height={500}
@@ -36,7 +42,7 @@ const Projects = async () => {
                   {ProjectTitle}
                 </h3>
                 <p className="text-body-lg lg:text-body-md-D">
-                  {ProjectDescription}
+                  {ProjectDescription && documentToReactComponents(ProjectDescription)}
                 </p>
               </article>
 
@@ -46,7 +52,7 @@ const Projects = async () => {
                 className="hidden lg:flex space-between px-Dlg py-sm "
               >
                 <Image
-                  src={"https:" + TitleImageURL}
+                  src={"https:" + TitleImage.fields.file.url}
                   alt="Project Title Image"
                   width={700}
                   height={500}
@@ -57,7 +63,7 @@ const Projects = async () => {
                     {ProjectTitle}
                   </h3>
                   <p className="text-body-lg lg:text-body-md-D">
-                    {ProjectDescription}
+                  {ProjectDescription && documentToReactComponents(ProjectDescription)}
                   </p>
                 </div>
               </article>

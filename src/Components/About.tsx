@@ -1,14 +1,18 @@
 import React from "react";
 import Image from "next/image";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { IImage } from "@/Interface/IImage";
 import { getPortfolioHome } from "@/lib/contentful";
 
 const About = async () => {
-  const data = await getPortfolioHome();
+  const data = await getPortfolioHome(process.env.CONTENTFUL_PORTFOLIO_HOME_ID as string);
   if (!data) return null;
 
-  const { aboutImage, aboutContent } = data[0].fields;
-  const AboutText = aboutContent?.content[0].content[0].value;
+  const { aboutContent } = data;
+  if (!aboutContent) return null;
 
+  const aboutImage = data.aboutImage as IImage;
+  
   return (
     <>
       <section>
@@ -24,14 +28,14 @@ const About = async () => {
       <section className="p-xs lg:hidden">
         {aboutImage && (
           <Image
-            src={"https:" + aboutImage?.fields.file?.url}
+            src={"https:" + aboutImage.fields.file?.url}
             alt="Personal Photo"
             width={800}
             height={700}
             className="px-md pb-xs"
           />
         )}
-        <p className="text-body-md lg:text-body-lg-D">{AboutText}</p>
+        <p className="text-body-md lg:text-body-lg-D">{documentToReactComponents(aboutContent)}</p>
       </section>
 
       {/* ABOUT Desktop */}
@@ -40,16 +44,16 @@ const About = async () => {
           <div className="col-span-1">
             {aboutImage && (
               <Image
-                src={"https:" + aboutImage?.fields.file?.url}
+                src={"https:" + aboutImage.fields.file?.url}
                 alt="Personal Photo"
-                width={aboutImage?.fields.file?.details.image?.width}
-                height={aboutImage?.fields.file?.details.image?.height}
+                width={800}
+                height={700}
                 className="lg:px-Dsm lg:pb-md"
               />
             )}
           </div>
           <div className="col-span-1">
-            <p className="text-body-md lg:text-body-md-D">{AboutText}</p>
+            <p className="text-body-md lg:text-body-md-D">{documentToReactComponents(aboutContent)}</p>
           </div>
         </div>
       </section>
