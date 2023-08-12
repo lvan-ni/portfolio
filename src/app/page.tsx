@@ -3,7 +3,6 @@ import Projects from "@/Components/Projects";
 import About from "@/Components/About";
 
 const Home = async () => {
-
   return (
     <main className="bg-core-stone text-core-jet">
       <Hero />

@@ -1,4 +1,5 @@
 import { createClient } from "contentful";
+import type { TypePortfolioHomeSkeleton, TypePortfolioProjectsPageSkeleton } from "./contentfulTypes";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID as string,
@@ -6,14 +7,14 @@ const client = createClient({
 });
 
 const getPortfolioHome = async () => {
-  const entries = await client.getEntries({
+  const entries = await client.getEntries<TypePortfolioHomeSkeleton>({
     content_type: "portfolioHome",
   });
   if (entries.items) return entries.items;
 };
 
 const getPortfolioProjects = async () => {
-  const entries = await client.getEntries({
+  const entries = await client.getEntries<TypePortfolioProjectsPageSkeleton>({
     content_type: "portfolioProjectsPage",
   });
 
