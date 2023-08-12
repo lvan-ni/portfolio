@@ -22,8 +22,8 @@ const config: Config = {
       spacing: {
         xs: "20px",
         sm: "40px",
-        lg: "60px",
-        xl: "70px",
+        md: "60px",
+        lg: "70px",
         Dxs: "80px",
         Dsm: "100px",
         Dmd: "120px",

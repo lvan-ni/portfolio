@@ -42,17 +42,17 @@ const Projects = async () => {
                 </div>
               </article>
 
-              {/* PROJECTS Laptop */}
+              {/* PROJECTS Tablet Landscape (iPad: 1024) + Laptop */}
               <article
                 key={project.sys.id + project.sys.space}
-                className="hidden lg:flex space-between px-Dmd xl:px-Dlg py-sm "
+                className="hidden lg:flex space-between px-Dxs xl:px-Dlg py-sm "
               >
                 <Image
                   src={"https:" + TitleImage.fields.file.url}
                   alt="Project Title Image"
                   width={500}
                   height={500}
-                  className="p-sm"
+                  className="p-xs"
                 />
                 <div className="flex flex-col items-start gap-4 p-sm">
                   <h3 className="text-body-lg lg:text-body-lg-D my-xs">

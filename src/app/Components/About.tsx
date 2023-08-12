@@ -46,7 +46,7 @@ const About = async () => {
               <Image
                 src={"https:" + aboutImage.fields.file?.url}
                 alt="Personal Photo"
-                width={800}
+                width={500}
                 height={700}
                 className="lg:px-Dsm lg:pb-md"
               />
