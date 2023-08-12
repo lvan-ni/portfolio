@@ -37,7 +37,7 @@ const About = async () => {
             className="px-md pb-sm"
           />
         )}
-        <div className="text-body-md">
+        <div className="text-body-md whitespace-pre-line">
           {documentToReactComponents(aboutContent)}
         </div>
       </section>
@@ -55,7 +55,7 @@ const About = async () => {
       <section className="hidden lg:hidden md:flex md:px-sm">
         <div className="grid grid-cols-2 gap-4">
           <div className="col-span-1">
-            <div className="text-body ">
+            <div className="text-body whitespace-pre-line">
               {documentToReactComponents(aboutContent)}
             </div>
           </div>
@@ -87,7 +87,7 @@ const About = async () => {
       <section className="hidden md:hidden lg:flex px-Dxs 2xl:px-Dxl">
         <div className="grid grid-cols-2 gap-4">
           <div className="col-span-1 py-lg">
-            <div className="lg:text-body-md-D 2xl:text-body-D 2xl:ml-md">
+            <div className="whitespace-pre-line lg:text-body-md-D 2xl:text-body-D 2xl:ml-md">
               {documentToReactComponents(aboutContent)}
             </div>
           </div>
