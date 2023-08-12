@@ -41,7 +41,7 @@ const Projects = async () => {
                   className="p-xs"
                 />
                 <h3 className="text-body-lg">{ProjectTitle}</h3>
-                <div className="text-body-lg whitespace-pre-line">
+                <div className="text-body whitespace-pre-line">
                   {documentToReactComponents(ProjectDescription)}
                 </div>
               </article>
