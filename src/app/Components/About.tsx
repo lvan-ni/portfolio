@@ -17,9 +17,9 @@ const About = async () => {
 
   return (
     <>
-      <section>
+      <section className="py-sm px-xs md:px-sm md:py-xs lg:px-Dxs 2xl:px-Dxl">
         <h2
-          className="text-header-md py-sm px-xs md:text-header-md-D md:px-sm md:py-xs lg:px-Dxs 2xl:px-Dxl"
+          className="text-header-md md:text-header-T lg:text-header-md-D"
           id="about"
         >
           _About
@@ -52,7 +52,7 @@ const About = async () => {
 
 
       {/* ABOUT Tablet */}
-      <section className="hidden lg:hidden md:flex md:px-sm">
+      <section className="hidden lg:hidden md:flex md:px-sm md:py-xs">
         <div className="grid grid-cols-2 gap-4">
           <div className="col-span-1">
             <div className="text-body whitespace-pre-line">

@@ -61,6 +61,10 @@ const config: Config = {
           fontSize: "46px",
           fontWeight: "700", // Bold
         },
+        ".text-header-T": {
+          fontSize: "48px",
+          fontWeight: "700", // Bold
+        },
         ".text-header-sm": {
           fontSize: "32px",
           fontWeight: "700", // Bold

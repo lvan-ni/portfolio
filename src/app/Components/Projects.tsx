@@ -9,10 +9,10 @@ const Projects = async () => {
   if (!projects) return null;
 
   return (
-    <>
+    <div className="my-sm md:my-md lg:my-Dxs 2xl:my-Dsm">
       <section className="px-xs py-sm md:px-sm md:py-xs lg:px-Dxs lg:py-md 2xl:px-Dxl">
         <h2
-          className="text-header-md md:text-header-md-D lg:text-header-md-D"
+          className="text-header-md md:text-header-T lg:text-header-md-D"
           id="projects"
         >
           _Projects
@@ -91,7 +91,7 @@ const Projects = async () => {
           );
         })}
       </section>
-    </>
+    </div>
   );
 };
 
