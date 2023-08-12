@@ -17,29 +17,29 @@ const About = async () => {
     <>
       <section>
         <h2
-          className="text-header-md lg:text-header-md-D py-sm px-xs lg:px-Dxs lg:py-md"
+          className="text-header-md py-sm px-xs md:text-header-md-D md:px-sm md:py-xs"
           id="about"
         >
           _About
         </h2>
       </section>
 
-      {/* ABOUT Mobile */}
-      <section className="p-xs lg:hidden">
+      {/* ABOUT Mobile 640 */}
+      <section className="p-xs md:hidden">
         {aboutImage && (
           <Image
             src={"https:" + aboutImage.fields.file?.url}
             alt="Personal Photo"
             width={800}
             height={700}
-            className="px-md pb-xs"
+            className="px-md pb-md"
           />
         )}
         <div className="text-body-md lg:text-body-lg-D">{documentToReactComponents(aboutContent)}</div>
       </section>
 
-      {/* ABOUT Desktop */}
-      <section className="hidden lg:flex lg:px-Dxs">
+      {/* ABOUT Tablet 640 - 1024 */}
+      <section className="hidden md:flex md:px-sm">
         <div className="grid grid-cols-2 gap-4">
           <div className="col-span-1">
             {aboutImage && (
@@ -48,20 +48,20 @@ const About = async () => {
                 alt="Personal Photo"
                 width={500}
                 height={700}
-                className="lg:px-Dsm lg:pb-md"
+                className="md:px-sm py-xs"
               />
             )}
           </div>
           <div className="col-span-1">
-            <div className="text-body-md lg:text-body-md-D">{documentToReactComponents(aboutContent)}</div>
+            <div className="md:text-body-lg">{documentToReactComponents(aboutContent)}</div>
           </div>
         </div>
       </section>
 
-      <section className="p-xs pb-sm lg:px-Dxs lg:py-md">
+      <section className="md:px-sm md:py-xs">
         <a
           href="mailto:hello@lvanni.org"
-          className="text-body-md lg:text-body-md-D text-core-jet hover:text-user-blue hover:border-user-blue email"
+          className="md:text-body-lg text-core-jet hover:text-user-blue hover:border-user-blue email"
         >
           hello@lvanni.org
         </a>

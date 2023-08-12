@@ -43,10 +43,6 @@ const config: Config = {
   plugins: [
     plugin(function ({ addUtilities }) {
       const newUtilities = {
-        ".text-logo": {
-          fontSize: "18px",
-          fontWeight: "700", // Bold
-        },
         ".text-header-lg": {
           fontSize: "62px",
           fontWeight: "700", // Bold
@@ -62,10 +58,6 @@ const config: Config = {
         ".text-body-md": {
           fontSize: "14px",
           fontWeight: "500", // Medium
-        },
-        ".text-logo-D": {
-          fontSize: "28px",
-          fontWeight: "700", // Bold
         },
         ".text-header-lg-D": {
           fontSize: "84px",
