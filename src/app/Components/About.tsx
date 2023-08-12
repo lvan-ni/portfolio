@@ -35,7 +35,7 @@ const About = async () => {
             className="px-md pb-md"
           />
         )}
-        <div className="text-body-md lg:text-body-lg-D">{documentToReactComponents(aboutContent)}</div>
+        <div className="text-body-md">{documentToReactComponents(aboutContent)}</div>
       </section>
 
       {/* ABOUT Tablet 640 - 1024 */}
@@ -58,10 +58,10 @@ const About = async () => {
         </div>
       </section>
 
-      <section className="md:px-sm md:py-xs">
+      <section className="md:px-sm md:py-xs md:flex md:flex-end">
         <a
           href="mailto:hello@lvanni.org"
-          className="md:text-body-lg text-core-jet hover:text-user-blue hover:border-user-blue email"
+          className="md:text-body text-core-jet hover:text-user-blue hover:border-user-blue email"
         >
           hello@lvanni.org
         </a>

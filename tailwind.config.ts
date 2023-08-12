@@ -9,6 +9,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        "primary-teal": "#004442",
+        "user-blue": "#2563eb",
+        "core-fog": "#fafafa",
+        "core-stone": "#f5f5f4",
+        "core-charcoal": "#262626",
+        "core-jet": "#0a0a0a",
+      },
       fontSize: {
         "62": "62px", // Mobile Header Large
         "42": "42px", // Mobile Header Medium
@@ -30,14 +38,6 @@ const config: Config = {
         Dlg: "160px",
         Dxl: "200px",
       },
-      colors: {
-        "primary-teal": "#004442",
-        "user-blue": "#2563eb",
-        "core-fog": "#fafafa",
-        "core-stone": "#f5f5f4",
-        "core-charcoal": "#262626",
-        "core-jet": "#0a0a0a",
-      },
     },
   },
   plugins: [
@@ -51,12 +51,24 @@ const config: Config = {
           fontSize: "42px",
           fontWeight: "700", // Bold
         },
+        ".text-header": {
+          fontSize: "52px",
+          fontWeight: "700", // Bold
+        },
+        ".text-header-sm": {
+          fontSize: "32px",
+          fontWeight: "700", // Bold
+        },
         ".text-body-lg": {
           fontSize: "18px",
           fontWeight: "500", // Medium
         },
         ".text-body-md": {
           fontSize: "14px",
+          fontWeight: "500", // Medium
+        },
+        ".text-body": {
+          fontSize: "16px",
           fontWeight: "500", // Medium
         },
         ".text-header-lg-D": {

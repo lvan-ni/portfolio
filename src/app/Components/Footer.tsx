@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-between items-center p-xs pb-md lg:p-Dxs lg:pb-Dsm text-body-md bg-core-stone text-core-jet">
+    <footer className="flex justify-between items-center text-body-md md:text-body bg-core-stone text-core-jet p-xs pb-md md:px-sm md:pb-Dxs lg:p-Dxs lg:pb-Dsm">
       <p className="lg:text-body-md-D">copyright©lvanni</p>
-      <div className="flex justify-between items-center gap-4 text-body-md lg:text-body-md-D">
+      <div className="flex justify-between items-center gap-4 text-body-md md:text-body lg:text-body-md-D">
         <a
           href="https://www.linkedin.com/in/lvan-ni/"
           className="text-core-jet hover:text-user-blue"
