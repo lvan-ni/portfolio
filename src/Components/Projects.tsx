@@ -7,7 +7,6 @@ import { getPortfolioProjects } from "@/lib/contentful";
 const Projects = async () => {
   const projects = await getPortfolioProjects();
   if (!projects) return null;
-  
 
   return (
     <>
@@ -20,11 +19,7 @@ const Projects = async () => {
       <section>
         {projects.map((project) => {
           const ProjectTitle = project.fields.projectTitle?.toString();
-          // const ProjectDescription =
-          //   project.fields.description?.content[0].content[0].value;
-          const ProjectDescription =
-          project.fields.description;
-          // const TitleImageURL = project.fields.titleImage?.fields.file.url;
+          const ProjectDescription = project.fields.description;
           const TitleImage = project.fields.titleImage as IImage;
 
           return (
@@ -42,7 +37,8 @@ const Projects = async () => {
                   {ProjectTitle}
                 </h3>
                 <p className="text-body-lg lg:text-body-md-D">
-                  {ProjectDescription && documentToReactComponents(ProjectDescription)}
+                  {ProjectDescription &&
+                    documentToReactComponents(ProjectDescription)}
                 </p>
               </article>
 
@@ -63,7 +59,8 @@ const Projects = async () => {
                     {ProjectTitle}
                   </h3>
                   <p className="text-body-lg lg:text-body-md-D">
-                  {ProjectDescription && documentToReactComponents(ProjectDescription)}
+                    {ProjectDescription &&
+                      documentToReactComponents(ProjectDescription)}
                   </p>
                 </div>
               </article>
