@@ -19,7 +19,7 @@ const Header = () => {
   const handleScrollProjects = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     const projectsSection = document.querySelector("#projects");
-    const offset = -80;
+    const offset = -70;
 
     if (projectsSection) {
       const top = (projectsSection as HTMLElement).offsetTop + offset;
