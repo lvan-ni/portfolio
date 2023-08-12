@@ -13,7 +13,7 @@ const config: Config = {
         "primary-teal": "#004442",
         "user-blue": "#2563eb",
         "core-fog": "#fafafa",
-        "core-stone": "#f5f5f4",
+        "core-stone": "#e7e5e4",
         "core-charcoal": "#262626",
         "core-jet": "#0a0a0a",
       },
@@ -81,6 +81,10 @@ const config: Config = {
         },
         ".text-body-lg-D": {
           fontSize: "28px",
+          fontWeight: "500", // Medium
+        },
+        ".text-body-D": {
+          fontSize: "24px",
           fontWeight: "500", // Medium
         },
         ".text-body-md-D": {

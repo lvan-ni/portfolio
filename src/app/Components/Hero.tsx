@@ -39,14 +39,14 @@ const Hero = async () => {
       {/* HERO Tablet */}
       <div className="hidden md:block lg:hidden">
         <section id="hero" className="md:px-sm md:py-xs">
-          <h1 className="md:text-header-lg">Lvan Ni</h1>
-          <h1 className="md:text-header-lg">
+          <h1 className="text-header-lg">Lvan Ni</h1>
+          <h1 className="text-header-lg">
             _Designer_Developer
           </h1>
         </section>
 
-        <section className="md:px-sm md:py-xs">
-          <h3 className="md:text-body-lg">
+        <section className="px-sm py-xs">
+          <h3 className="text-body-md-D">
             {documentToReactComponents(introContent)}
           </h3>
         </section>
@@ -63,20 +63,20 @@ const Hero = async () => {
 
       {/* HERO DESKTOP */}
       <div className="hidden lg:block">
-        <section id="hero" className="lg:px-Dxs lg:py-sm">
+        <section id="hero" className="lg:px-Dxs lg:py-sm 2xl:px-Dxl">
           <h1 className="lg:text-header-lg-D">Lvan Ni</h1>
           <h1 className="lg:text-header-lg-D">
             _Designer_Developer
           </h1>
         </section>
 
-        <section className="lg:px-Dxs lg:py-sm">
+        <section className="lg:px-Dxs lg:py-sm 2xl:px-Dxl">
           <h3 className="lg:text-body-lg-D">
             {documentToReactComponents(introContent)}
           </h3>
         </section>
 
-        <section className="lg:px-Dxs lg:py-sm">
+        <section className="lg:px-Dxs lg:py-sm 2xl:px-Dxl">
           <a
             href="mailto:hello@lvanni.org"
             className="lg:text-body-md-D text-core-jet hover:text-user-blue hover:border-user-blue email"
