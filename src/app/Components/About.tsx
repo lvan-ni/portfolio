@@ -19,7 +19,7 @@ const About = async () => {
     <>
       <section>
         <h2
-          className="text-header-md py-sm px-xs md:text-header-md-D md:px-sm md:py-xs 2xl:px-Dxl"
+          className="text-header-md py-sm px-xs md:text-header-md-D md:px-sm md:py-xs lg:px-Dxs 2xl:px-Dxl"
           id="about"
         >
           _About
@@ -83,32 +83,32 @@ const About = async () => {
       </section>
 
 
-      {/* ABOUT Desktop */}
-      <section className="hidden md:hidden lg:flex md:px-sm 2xl:px-Dxl">
+      {/* ABOUT Desktop lg:1024 2xl:1536 */}
+      <section className="hidden md:hidden lg:flex px-Dxs 2xl:px-Dxl">
         <div className="grid grid-cols-2 gap-4">
           <div className="col-span-1 py-lg">
-            <div className="lg:text-body-md-D 2xl:text-body-D 2xl:mr-md">
+            <div className="lg:text-body-md-D 2xl:text-body-D 2xl:ml-md">
               {documentToReactComponents(aboutContent)}
             </div>
           </div>
-          <div className="col-span-1">
+          <div className="col-span-1 flex justify-center items-center">
             {aboutImage && (
               <Image
                 src={"https:" + aboutImage.fields.file?.url}
                 alt="Personal Photo"
                 width={600}
                 height={700}
-                className="lg:px-sm lg:py-lg 2xl:ml-lg"
+                className="lg:px-sm lg:py-lg"
               />
             )}
           </div>
         </div>
       </section>
 
-      <section className="hidden md:hidden lg:flex lg:px-sm pt-md 2xl:px-Dxl">
+      <section className="hidden md:hidden lg:flex px-Dxs pt-md 2xl:px-Dxl">
         <a
           href="mailto:hello@lvanni.org"
-          className="lg:text-body-md-D text-core-jet hover:text-user-blue hover:border-user-blue email"
+          className="text-body-md-D text-core-jet hover:text-user-blue hover:border-user-blue email"
         >
           hello@lvanni.org
         </a>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 flex justify-between items-center bg-core-stone text-core-jet p-xs md:p-sm lg:px-Dxs lg:py-sm 2xl:px-Dxl">
+    <header className="sticky top-0 z-50 flex justify-between items-center bg-core-stone text-core-jet p-xs md:p-sm lg:px-Dxs lg:py-xs 2xl:px-Dxl">
       <a href="#hero">
         <img
           src="/logo-header.png"
