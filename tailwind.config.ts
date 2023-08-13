@@ -13,6 +13,7 @@ const config: Config = {
       screens: {
         'xs': "320px",
         's': "375px",
+        'xx': "1728",
         ...defaultTheme.screens,
       },
       colors: {
