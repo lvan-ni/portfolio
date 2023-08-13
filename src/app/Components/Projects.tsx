@@ -49,7 +49,7 @@ const Projects = async () => {
                     type="video/mp4"
                   />
                 </video>
-                <h3 className="text-body-lg">{ProjectTitle}</h3>
+                <h3 className="project-title-lg pb-xs">{ProjectTitle}</h3>
                 <div className="text-body whitespace-pre-line">
                   {documentToReactComponents(ProjectDescription)}
                 </div>
@@ -76,7 +76,7 @@ const Projects = async () => {
                   />
                 </video>
                 <div className="flex flex-col items-start gap-4">
-                  <h3 className="text-body-lg">{ProjectTitle}</h3>
+                  <h3 className="project-title-lg pb-xs">{ProjectTitle}</h3>
                   <div className="text-body whitespace-pre-line">
                     {documentToReactComponents(ProjectDescription)}
                   </div>
@@ -111,7 +111,7 @@ const Projects = async () => {
                   className="p-xs 2xl:ml-lg"
                 /> */}
                 <div className="flex flex-col items-start gap-4 pl-md 2xl:px-Dlg">
-                  <h3 className="text-body-D 2xl:text-body-lg-D">
+                  <h3 className="project-title-D pb-xs 2xl:project-title-lg-D">
                     {ProjectTitle}
                   </h3>
                   <div className="text-body-md-D 2xl:text-body-D whitespace-pre-line">

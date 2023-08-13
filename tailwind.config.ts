@@ -73,6 +73,10 @@ const config: Config = {
           fontSize: "18px",
           fontWeight: "500", // Medium
         },
+        ".project-title-lg": {
+          fontSize: "18px",
+          fontWeight: "700", // Medium
+        },
         ".text-body-md": {
           fontSize: "14px",
           fontWeight: "500", // Medium
@@ -97,9 +101,17 @@ const config: Config = {
           fontSize: "28px",
           fontWeight: "500", // Medium
         },
+        ".project-title-lg-D": {
+          fontSize: "28px",
+          fontWeight: "700", // Medium
+        },
         ".text-body-D": {
           fontSize: "24px",
           fontWeight: "500", // Medium
+        },
+        ".project-title-D": {
+          fontSize: "24px",
+          fontWeight: "700", // Medium
         },
         ".text-body-md-D": {
           fontSize: "20px",
