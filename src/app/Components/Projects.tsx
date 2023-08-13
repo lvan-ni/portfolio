@@ -8,6 +8,7 @@ const Projects = async () => {
   const projects = await getPortfolioProjects();
   if (!projects) return null;
   
+
   return (
     <div className="my-sm md:my-md lg:my-Dxs 2xl:my-Dsm">
       <section className="px-xs py-sm md:px-sm md:py-xs lg:px-Dxs lg:py-md 2xl:px-Dxl">
@@ -33,6 +34,21 @@ const Projects = async () => {
                 key={project.sys.id}
                 className="p-xs md:hidden lg:hidden"
               >
+                <video
+                  autoPlay
+                  playsInline
+                  muted
+                  loop
+                  preload="auto"
+                  className="p-xs"
+                  width={800}
+                  height={700}
+                >
+                  <source
+                    src={"https:" + TitleImage.fields.file.url}
+                    type="video/mp4"
+                  />
+                </video>
                 {/* <Image
                   src={"https:" + TitleImage.fields.file.url}
                   alt="Project Title Image"
@@ -59,7 +75,7 @@ const Projects = async () => {
                   preload="auto"
                   className="p-xs"
                   width={500}
-                  height={500}
+                  height={700}
                 >
                   <source
                     src={"https:" + TitleImage.fields.file.url}
@@ -86,6 +102,21 @@ const Projects = async () => {
                 key={project.sys.id + project.sys.contentType}
                 className="hidden md:hidden lg:flex space-between px-Dxs py-sm 2xl:px-Dxl"
               >
+                <video
+                  autoPlay
+                  playsInline
+                  muted
+                  loop
+                  preload="auto"
+                  className="p-xs"
+                  width={600}
+                  height={700}
+                >
+                  <source
+                    src={"https:" + TitleImage.fields.file.url}
+                    type="video/mp4"
+                  />
+                </video>
                 {/* <Image
                   src={"https:" + TitleImage.fields.file.url}
                   alt="Project Title Image"
