@@ -7,9 +7,7 @@ import { getPortfolioProjects } from "@/lib/contentful";
 const Projects = async () => {
   const projects = await getPortfolioProjects();
   if (!projects) return null;
-  console.log(projects[1].fields.titleImage.fields.file.url);
   
-
   return (
     <div className="my-sm md:my-md lg:my-Dxs 2xl:my-Dsm">
       <section className="px-xs py-sm md:px-sm md:py-xs lg:px-Dxs lg:py-md 2xl:px-Dxl">
