@@ -49,13 +49,6 @@ const Projects = async () => {
                     type="video/mp4"
                   />
                 </video>
-                {/* <Image
-                  src={"https:" + TitleImage.fields.file.url}
-                  alt="Project Title Image"
-                  width={800}
-                  height={500}
-                  className="p-xs"
-                /> */}
                 <h3 className="text-body-lg">{ProjectTitle}</h3>
                 <div className="text-body whitespace-pre-line">
                   {documentToReactComponents(ProjectDescription)}
@@ -64,7 +57,7 @@ const Projects = async () => {
 
               {/* PROJECTS Tablet 768 */}
               <article
-                key={project.sys.id + project.sys.space}
+                key={project.sys.id + 'tablet'}
                 className="hidden lg:hidden md:flex space-between px-xs py-sm"
               >
                 <video
@@ -82,13 +75,6 @@ const Projects = async () => {
                     type="video/mp4"
                   />
                 </video>
-                {/* <Image
-                  src={"https:" + TitleImage.fields.file.url}
-                  alt="Project Title Image"
-                  width={500}
-                  height={500}
-                  className="p-xs"
-                /> */}
                 <div className="flex flex-col items-start gap-4">
                   <h3 className="text-body-lg">{ProjectTitle}</h3>
                   <div className="text-body whitespace-pre-line">
@@ -99,7 +85,7 @@ const Projects = async () => {
 
               {/* PROJECTS Desktop 1024+ */}
               <article
-                key={project.sys.id + project.sys.contentType}
+                key={project.sys.id + 'desktop'}
                 className="hidden md:hidden lg:flex space-between px-Dxs py-sm 2xl:px-Dxl"
               >
                 <video
