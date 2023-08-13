@@ -7,6 +7,8 @@ import { getPortfolioProjects } from "@/lib/contentful";
 const Projects = async () => {
   const projects = await getPortfolioProjects();
   if (!projects) return null;
+  console.log(projects[1].fields.titleImage.fields.file.url);
+  
 
   return (
     <div className="my-sm md:my-md lg:my-Dxs 2xl:my-Dsm">
@@ -33,13 +35,13 @@ const Projects = async () => {
                 key={project.sys.id}
                 className="p-xs md:hidden lg:hidden"
               >
-                <Image
+                {/* <Image
                   src={"https:" + TitleImage.fields.file.url}
                   alt="Project Title Image"
                   width={800}
                   height={500}
                   className="p-xs"
-                />
+                /> */}
                 <h3 className="text-body-lg">{ProjectTitle}</h3>
                 <div className="text-body whitespace-pre-line">
                   {documentToReactComponents(ProjectDescription)}
@@ -51,13 +53,28 @@ const Projects = async () => {
                 key={project.sys.id + project.sys.space}
                 className="hidden lg:hidden md:flex space-between px-xs py-sm"
               >
-                <Image
+                <video
+                  autoPlay
+                  playsInline
+                  muted
+                  loop
+                  preload="auto"
+                  className="p-xs"
+                  width={500}
+                  height={500}
+                >
+                  <source
+                    src={"https:" + TitleImage.fields.file.url}
+                    type="video/mp4"
+                  />
+                </video>
+                {/* <Image
                   src={"https:" + TitleImage.fields.file.url}
                   alt="Project Title Image"
                   width={500}
                   height={500}
                   className="p-xs"
-                />
+                /> */}
                 <div className="flex flex-col items-start gap-4">
                   <h3 className="text-body-lg">{ProjectTitle}</h3>
                   <div className="text-body whitespace-pre-line">
@@ -68,16 +85,16 @@ const Projects = async () => {
 
               {/* PROJECTS Desktop 1024+ */}
               <article
-                key={project.sys.id}
+                key={project.sys.id + project.sys.contentType}
                 className="hidden md:hidden lg:flex space-between px-Dxs py-sm 2xl:px-Dxl"
               >
-                <Image
+                {/* <Image
                   src={"https:" + TitleImage.fields.file.url}
                   alt="Project Title Image"
                   width={600}
                   height={500}
                   className="p-xs 2xl:ml-lg"
-                />
+                /> */}
                 <div className="flex flex-col items-start gap-4 pl-md 2xl:px-Dlg">
                   <h3 className="text-body-D 2xl:text-body-lg-D">
                     {ProjectTitle}
