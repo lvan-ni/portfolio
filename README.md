@@ -13,7 +13,7 @@ The design was done in Figma, emphasizing readability, aesthetic appeal, and sea
 - **Responsive**: Designed for optimal viewing across various devices, from desktops to mobiles.
 - **Lightweight**: Tailored with performance in mind using Tailwind CSS for utility-first CSS.
 - **Fast**: Built using Next.js for a smooth and quick user experience.
-- **Dynamic Content**: Utilizes Contentful as a headless CMS, ensuring fresh and updated content seamlessly integrated into the site.
+- **Dynamic Content**: Utilises Contentful as a headless CMS, ensuring fresh and updated content seamlessly integrated into the site.
 
 ## Development
 
