@@ -29,7 +29,7 @@ const Projects = async () => {
 
           return (
             <>
-              {/* PROJECTS Mobile */}
+              {/* PROJECTS Mobile 320 */}
               <article
                 key={project.sys.id}
                 className="p-xs md:hidden lg:hidden"

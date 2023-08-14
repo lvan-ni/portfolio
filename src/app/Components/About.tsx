@@ -51,7 +51,7 @@ const About = async () => {
       </section>
 
 
-      {/* ABOUT Tablet */}
+      {/* ABOUT Tablet 768 */}
       <section className="hidden lg:hidden md:flex md:px-sm md:py-xs">
         <div className="grid grid-cols-2 gap-4">
           <div className="col-span-1">
@@ -83,7 +83,7 @@ const About = async () => {
       </section>
 
 
-      {/* ABOUT Desktop lg:1024 2xl:1536 */}
+      {/* ABOUT Desktop 1024+ */}
       <section className="hidden md:hidden lg:flex px-Dxs 2xl:px-Dxl">
         <div className="grid grid-cols-2 gap-4">
           <div className="col-span-1 py-lg">

@@ -13,7 +13,7 @@ const Hero = async () => {
 
   return (
     <div id="hero">
-      {/* HERO Mobile */}
+      {/* HERO Mobile 320 */}
       <div className="md:hidden lg:hidden">
         <section className="p-xs">
           <h1 className="text-header s:text-header-lg">Lvan Ni</h1>
@@ -36,7 +36,7 @@ const Hero = async () => {
         </section>
       </div>
 
-      {/* HERO Tablet */}
+      {/* HERO Tablet 768 */}
       <div className="hidden md:block lg:hidden">
         <section className="md:px-sm md:py-xs">
           <h1 className="text-header-D">Lvan Ni</h1>
@@ -59,7 +59,7 @@ const Hero = async () => {
         </section>
       </div>
 
-      {/* HERO DESKTOP */}
+      {/* HERO DESKTOP 1024+ */}
       <div className="hidden lg:block">
         <section className="lg:px-Dxs lg:py-sm 2xl:px-Dxl">
           <h1 className="lg:text-header-lg-D">Lvan Ni</h1>
