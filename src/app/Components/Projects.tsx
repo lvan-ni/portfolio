@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { IImage } from "@/Interface/IImage";
 import { getPortfolioProjects } from "@/lib/contentful";
@@ -103,13 +102,6 @@ const Projects = async () => {
                     type="video/mp4"
                   />
                 </video>
-                {/* <Image
-                  src={"https:" + TitleImage.fields.file.url}
-                  alt="Project Title Image"
-                  width={600}
-                  height={500}
-                  className="p-xs 2xl:ml-lg"
-                /> */}
                 <div className="flex flex-col items-start gap-4 pl-md 2xl:px-Dlg">
                   <h3 className="project-title-D pb-xs 2xl:project-title-lg-D">
                     {ProjectTitle}
