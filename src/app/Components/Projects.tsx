@@ -5,7 +5,7 @@ import { getPortfolioProjects } from "@/lib/contentful";
 
 const Projects = async () => {
   const projects = await getPortfolioProjects();
-  console.log(projects);
+  // console.log(projects);
   
   if (!projects) return null;
   
