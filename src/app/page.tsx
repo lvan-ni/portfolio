@@ -1,14 +1,20 @@
-import Hero from "@/app/Components/Hero";
-import Projects from "@/app/Components/Projects";
-import About from "@/app/Components/About";
+import Hero from '@/components/Hero/Hero';
+import Projects from '@/components/Projects/Projects';
+import About from '@/components/About/About';
+import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header/Header';
 
 const Home = async () => {
   return (
-    <main className="bg-core-stone text-core-jet">
-      <Hero />
-      <Projects />
-      <About /> 
-    </main>
+    <>
+      <Header />
+      <main className='bg-core-stone text-core-jet'>
+        <Hero />
+        <Projects />
+        <About />
+      </main>
+      <Footer />
+    </>
   );
 };
 
