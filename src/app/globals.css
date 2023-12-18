@@ -2,6 +2,15 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@layer base {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+    @apply bg-core-stone text-core-jet;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,7 +21,6 @@ html {
   padding: 10px 20px;
 }
 
-
 @media (min-width: 1024px) {
   .email {
     border-radius: 30px;
@@ -20,4 +28,3 @@ html {
     padding: 12px 38px;
   }
 }
-
