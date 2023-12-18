@@ -9,7 +9,7 @@ const blog = () => {
         <h2
           className="text-header-md md:text-header-T lg:text-header-md-D"
         >
-          _Blog
+          _Journal
         </h2>
       </section>
       <section className='flex flex-col gap-4'>

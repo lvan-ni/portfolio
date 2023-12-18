@@ -82,10 +82,10 @@ const Header = () => {
           _Projects
         </a> */}
         <Link
-          href='/blog'
+          href='/journal'
           className='text-core-jet hover:text-user-blue'
         >
-          _Blog
+          _Journal
         </Link>
         <Link
           href='/about'
