@@ -4,7 +4,7 @@ import logo from '@/assets/logo2.svg';
 import Image from 'next/image';
 import gsap from 'gsap';
 
-const AdditionalMethods = () => {
+const ControlMethods = () => {
   const lvanRef = React.useRef() as React.MutableRefObject<HTMLImageElement>;
 
   useLayoutEffect(() => {
@@ -36,7 +36,7 @@ const AdditionalMethods = () => {
 
   return (
     <div className='mx-sm md:mx-md lg:mx-Dxs 2xl:mx-Dsm'>
-      <h1>Addtional Methods</h1>
+      <h1>Control Methods</h1>
       <div className='flex items-center justify-between p-4'>
         <Image
           src={logo}
@@ -54,4 +54,4 @@ const AdditionalMethods = () => {
   );
 };
 
-export default AdditionalMethods;
+export default ControlMethods;
