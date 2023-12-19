@@ -14,8 +14,8 @@ const APIBasics = () => {
       gsap.to(lvanRef.current, {
         duration: 2.5,
         x: 200,
-        y: 150,
-        backgroundColor: '#AADAC8',
+        y: 100,
+        backgroundColor: '#aadac8',
         borderRadius: '10%',
         border: '5px solid white',
         ease: 'expo.inOut',
@@ -37,8 +37,11 @@ const APIBasics = () => {
         // console.log(myObject.rotation);
       },
     });
-    return () => lvan.revert();
-    // return () => grow.revert();
+    
+    return () => {
+      lvan.revert();
+      grow.revert();
+    };
   }, []);
 
   return (
@@ -49,12 +52,14 @@ const APIBasics = () => {
           src={logo}
           alt='logo'
           priority={true}
+          height={100}
           ref={lvanRef}
         />
         <Image
           src={grow}
           alt='grow'
           priority={true}
+          height={100}
           ref={growRef}
         />
       </div>
