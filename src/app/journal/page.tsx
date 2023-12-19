@@ -1,6 +1,7 @@
 import React from 'react';
 import APIBasics from '@/components/GSAP/APIBasics/APIBasics';
 import AdditionalMethods from '@/components/GSAP/AdditionalMethods/AdditionalMethods';
+import ControlMethods from '@/components/GSAP/ControlMethods/ControlMethods';
 
 const blog = () => {
   return (
@@ -12,9 +13,10 @@ const blog = () => {
           _Journal
         </h2>
       </section>
-      <section className='flex flex-col gap-4'>
+      <section className='flex flex-col gap-8'>
         <APIBasics />
-        <AdditionalMethods />
+        {/* <AdditionalMethods /> */}
+        <ControlMethods />
       </section>
     </>
   );
