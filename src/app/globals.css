@@ -9,10 +9,20 @@
     box-sizing: border-box;
     @apply bg-core-stone text-core-jet;
   }
+  
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
-html {
-  scroll-behavior: smooth;
+:root {
+  --primary-teal: #004442;
+  --secondary-mint: #aadac8;
+  --user-blue: #2563eb;
+  --core-fog: #fafafa;
+  --core-stone: #e7e5e4;
+  --core-charcoal: #262626;
+  --core-jet: #0a0a0a;
 }
 
 .email {

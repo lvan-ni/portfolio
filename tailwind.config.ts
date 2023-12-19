@@ -18,6 +18,7 @@ const config: Config = {
       },
       colors: {
         "primary-teal": "#004442",
+        "secondary-mint": "#AADAC8",
         "user-blue": "#2563eb",
         "core-fog": "#fafafa",
         "core-stone": "#e7e5e4",
