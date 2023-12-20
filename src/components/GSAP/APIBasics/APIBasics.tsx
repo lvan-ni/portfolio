@@ -10,7 +10,7 @@ const APIBasics = () => {
   const growRef = useRef() as React.MutableRefObject<HTMLImageElement>;
 
   useLayoutEffect(() => {
-    let lvan = gsap.context(() => {
+    const lvan = gsap.context(() => {
       gsap.to(lvanRef.current, {
         duration: 2.5,
         x: 200,
@@ -22,7 +22,7 @@ const APIBasics = () => {
       });
     });
 
-    let grow = gsap.context(() => {
+    const grow = gsap.context(() => {
       gsap.set(growRef.current, {
         transformOrigin: '50% 50%',
       });
