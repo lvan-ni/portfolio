@@ -9,9 +9,15 @@
     box-sizing: border-box;
     @apply bg-core-stone text-core-jet;
   }
-  
+
   html {
     scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-xs {
+    @apply flex items-center border border-solid border-core-charcoal py-0.5 px-1 cursor-pointer;
   }
 }
 
