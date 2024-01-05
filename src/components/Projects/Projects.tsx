@@ -41,7 +41,7 @@ const Projects = async () => {
                   muted
                   loop
                   preload="auto"
-                  className="p-xs"
+                  className="py-xs"
                   width={800}
                   height={700}
                 >
