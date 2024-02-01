@@ -75,10 +75,10 @@ const About = async () => {
 
       <section className="hidden lg:hidden md:flex md:px-sm md:py-xs">
         <a
-          href="mailto:hello@lvanni.org"
+          href="mailto:lvan.ni@appliedtechnology.se"
           className="text-body text-core-jet hover:text-user-blue hover:border-user-blue email"
         >
-          hello@lvanni.org
+          Start a Conversation
         </a>
       </section>
 
@@ -107,10 +107,10 @@ const About = async () => {
 
       <section className="hidden md:hidden lg:flex px-Dxs pt-md 2xl:px-Dxl">
         <a
-          href="mailto:hello@lvanni.org"
+          href="mailto:lvan.ni@appliedtechnology.se"
           className="text-body-md-D text-core-jet hover:text-user-blue hover:border-user-blue email"
         >
-          hello@lvanni.org
+          Start a Conversation
         </a>
       </section>
     </>

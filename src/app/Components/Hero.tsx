@@ -27,9 +27,12 @@ const Hero = async () => {
           <br />
           <p className='text-body-lg'>
             Currently consulting with a startup redesigning and rebuilding their
-            user experience and web app. In my free time, I&apos;m delving into
-            GSAP, excited to bring a new dimension of dynamic interactive
-            animations to future projects.
+            user experience and web app.
+          </p>
+          <br />
+          <p className='text-body-lg'>
+            In my free time, I&apos;m delving into GSAP, excited to bring a new
+            dimension of dynamic interactive animations to future projects.
           </p>
         </section>
 
@@ -58,18 +61,21 @@ const Hero = async () => {
           <br />
           <p className='text-body-md-D'>
             Currently consulting with a startup redesigning and rebuilding their
-            user experience and web app. In my free time, I&apos;m delving into
-            GSAP, excited to bring a new dimension of dynamic interactive
-            animations to future projects.
+            user experience and web app.
+          </p>
+          <br />
+          <p className='text-body-md-D'>
+            In my free time, I&apos;m delving into GSAP, excited to bring a new
+            dimension of dynamic interactive animations to future projects.
           </p>
         </section>
 
         <section className='md:px-sm md:py-xs'>
           <a
-            href='mailto:hello@lvanni.org'
+            href='mailto:lvan.ni@appliedtechnology.se'
             className='md:text-body text-core-jet hover:text-user-blue hover:border-user-blue email'
           >
-            hello@lvanni.org
+            Explore Your Vision
           </a>
         </section>
       </div>
@@ -82,25 +88,28 @@ const Hero = async () => {
         </section>
 
         <section className='lg:px-Dxs lg:py-sm 2xl:px-Dxl'>
-          <p className='text-body-md-D'>
+          <p className='lg:text-body-lg-D'>
             As a Full-Stack Developer and UX designer, I approach problems from
             a combined perspective, crafting intuitive and effective solutions.
           </p>
           <br />
           <p className='lg:text-body-lg-D'>
             Currently consulting with a startup redesigning and rebuilding their
-            user experience and web app. In my free time, I&apos;m delving into
-            GSAP, excited to bring a new dimension of dynamic interactive
-            animations to future projects.
+            user experience and web app.
+          </p>
+          <br />
+          <p className='lg:text-body-lg-D'>
+            In my free time, I&apos;m delving into GSAP, excited to bring a new
+            dimension of dynamic interactive animations to future projects.
           </p>
         </section>
 
         <section className='lg:px-Dxs lg:py-sm 2xl:px-Dxl'>
           <a
-            href='mailto:hello@lvanni.org'
+            href='mailto:lvan.ni@appliedtechnology.se'
             className='lg:text-body-md-D text-core-jet hover:text-user-blue hover:border-user-blue email'
           >
-            hello@lvanni.org
+            Explore Your Vision
           </a>
         </section>
       </div>

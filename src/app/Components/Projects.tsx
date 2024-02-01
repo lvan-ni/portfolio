@@ -69,7 +69,7 @@ const Projects = async () => {
               {/* PROJECTS Tablet 768 */}
               <article
                 key={project.sys.id + 'tablet'}
-                className='hidden lg:hidden md:flex space-between px-xs py-sm'
+                className='hidden lg:hidden md:flex md:items-start md:justify-evenly md:px-xs md:py-sm'
               >
                 <video
                   autoPlay
@@ -77,8 +77,8 @@ const Projects = async () => {
                   muted
                   loop
                   preload='auto'
-                  className='py-xs'
-                  width={500}
+                  className='px-xs py-1'
+                  width={400}
                   height={700}
                 >
                   <source
@@ -97,7 +97,7 @@ const Projects = async () => {
               {/* PROJECTS Desktop 1024+ */}
               <article
                 key={project.sys.id + 'desktop'}
-                className='hidden md:hidden lg:flex space-between px-Dxs py-sm 2xl:px-Dxl'
+                className='hidden md:hidden lg:flex lg:items-start lg:px-Dxs lg:py-sm 2xl:px-Dxl'
               >
                 <video
                   autoPlay
@@ -105,8 +105,8 @@ const Projects = async () => {
                   muted
                   loop
                   preload='auto'
-                  className='py-xs'
-                  width={600}
+                  className='px-xs py-2'
+                  width={400}
                   height={700}
                 >
                   <source
@@ -114,7 +114,7 @@ const Projects = async () => {
                     type='video/mp4'
                   />
                 </video>
-                <div className='flex flex-col items-start gap-4 pl-md 2xl:px-Dlg'>
+                <div className='flex flex-col items-start gap-4 pl-md 2xl:px-xs'>
                   <h3 className='project-title-D pb-xs 2xl:project-title-lg-D'>
                     {ProjectTitle}
                   </h3>
