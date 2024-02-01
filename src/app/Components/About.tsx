@@ -43,10 +43,10 @@ const About = async () => {
       </section>
       <section className="md:hidden lg:hidden flex px-xs py-xs">
         <a
-          href="mailto:hello@lvanni.org"
+          href="mailto:lvan.ni@appliedtechnology.se"
           className="text-body-md text-core-jet hover:text-user-blue hover:border-user-blue email"
         >
-          hello@lvanni.org
+          Start a Conversation
         </a>
       </section>
 

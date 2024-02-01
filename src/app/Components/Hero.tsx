@@ -28,10 +28,10 @@ const Hero = async () => {
 
         <section className="p-xs">
           <a
-            href="mailto:hello@lvanni.org"
+            href="mailto:lvan.ni@appliedtechnology.se"
             className="text-body-md text-core-jet hover:text-user-blue hover:border-user-blue email"
           >
-            hello@lvanni.org
+            Explore Your Vision
           </a>
         </section>
       </div>
