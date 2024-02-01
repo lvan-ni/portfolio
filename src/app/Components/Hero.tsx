@@ -1,8 +1,5 @@
 import React from 'react';
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import ReactMarkdown from 'react-markdown';
 import { getPortfolioHome } from '@/lib/contentful';
-import { render } from 'react-dom';
 
 const Hero = async () => {
   const data = await getPortfolioHome(
