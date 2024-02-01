@@ -17,8 +17,8 @@ export interface TypePortfolioProjectsPageFields {
     description?: EntryFieldTypes.RichText;
     titleImage?: EntryFieldTypes.AssetLink;
     projectImages?: EntryFieldTypes.Array<EntryFieldTypes.AssetLink>;
+    projectLink?: EntryFieldTypes.Symbol;
 }
 
 export type TypePortfolioProjectsPageSkeleton = EntrySkeletonType<TypePortfolioProjectsPageFields, "portfolioProjectsPage">;
 export type TypePortfolioProjectsPage<Modifiers extends ChainModifiers, Locales extends LocaleCode> = Entry<TypePortfolioProjectsPageSkeleton, Modifiers, Locales>;
-
