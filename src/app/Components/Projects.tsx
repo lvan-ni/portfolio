@@ -69,7 +69,7 @@ const Projects = async () => {
               {/* PROJECTS Tablet 768 */}
               <article
                 key={project.sys.id + 'tablet'}
-                className='hidden lg:hidden md:flex md:items-start md:justify-evenly md:px-xs md:py-sm'
+                className='hidden lg:hidden md:flex md:items-start md:px-xs md:py-Dxs'
               >
                 <video
                   autoPlay
@@ -78,7 +78,7 @@ const Projects = async () => {
                   loop
                   preload='auto'
                   className='px-xs py-1'
-                  width={400}
+                  width={360}
                   height={700}
                 >
                   <source
@@ -86,8 +86,8 @@ const Projects = async () => {
                     type='video/mp4'
                   />
                 </video>
-                <div className='flex flex-col items-start gap-4'>
-                  <h3 className='project-title-lg pb-xs'>{ProjectTitle}</h3>
+                <div className='flex flex-col items-start'>
+                  <h3 className='project-title-lg'>{ProjectTitle}</h3>
                   <div className='pb-4 text-user-blue'>
                   {projectLink && (
                     <Link
@@ -117,15 +117,15 @@ const Projects = async () => {
                   loop
                   preload='auto'
                   className='px-xs py-2'
-                  width={400}
-                  height={700}
+                  width={440}
+                  height='auto'
                 >
                   <source
                     src={'https:' + TitleImage.fields.file.url}
                     type='video/mp4'
                   />
                 </video>
-                <div className='flex flex-col items-start gap-4 pl-md 2xl:px-lg'>
+                <div className='flex flex-col items-start pl-md 2xl:px-lg'>
                   <h3 className='project-title-D 2xl:project-title-lg-D'>
                     {ProjectTitle}
                   </h3>
