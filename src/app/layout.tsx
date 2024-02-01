@@ -7,7 +7,7 @@ import Footer from "@/app/Components/Footer";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Lvan Ni | Designer & Developer",
+  title: "Lvan Ni _Designer_Developer",
 };
 
 export default function RootLayout({
