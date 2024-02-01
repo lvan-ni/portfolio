@@ -2,7 +2,7 @@ import React from 'react';
 import APIBasics from '@/components/GSAP/APIBasics/APIBasics';
 import AdditionalAndControlMethods from '@/components/GSAP/AdditionalAndControlMethods/AdditionalAndControlMethods';
 
-const blog = () => {
+const Journal = () => {
   return (
     <>
       <section className='px-xs py-sm md:px-sm md:py-xs lg:px-Dxs lg:py-md 2xl:px-Dxl'>
@@ -20,4 +20,4 @@ const blog = () => {
   );
 };
 
-export default blog;
+export default Journal;
