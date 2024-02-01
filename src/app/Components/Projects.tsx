@@ -88,6 +88,17 @@ const Projects = async () => {
                 </video>
                 <div className='flex flex-col items-start gap-4'>
                   <h3 className='project-title-lg pb-xs'>{ProjectTitle}</h3>
+                  <div className='pb-4 text-user-blue'>
+                  {projectLink && (
+                    <Link
+                      href={projectLink}
+                      target={'_blank'}
+                      rel={'noopener noreferrer'}
+                    >
+                      robwegh.com
+                    </Link>
+                  )}
+                </div>
                   <div className='text-body whitespace-pre-line'>
                     {documentToReactComponents(ProjectDescription)}
                   </div>
@@ -97,7 +108,7 @@ const Projects = async () => {
               {/* PROJECTS Desktop 1024+ */}
               <article
                 key={project.sys.id + 'desktop'}
-                className='hidden md:hidden lg:flex lg:items-start lg:px-Dxs lg:py-sm 2xl:px-Dxl'
+                className='hidden md:hidden lg:flex lg:items-start lg:px-Dxs lg:py-sm 2xl:px-Dxl 2xl:pb-Dlg'
               >
                 <video
                   autoPlay
@@ -114,10 +125,21 @@ const Projects = async () => {
                     type='video/mp4'
                   />
                 </video>
-                <div className='flex flex-col items-start gap-4 pl-md 2xl:px-xs'>
-                  <h3 className='project-title-D pb-xs 2xl:project-title-lg-D'>
+                <div className='flex flex-col items-start gap-4 pl-md 2xl:px-lg'>
+                  <h3 className='project-title-D 2xl:project-title-lg-D'>
                     {ProjectTitle}
                   </h3>
+                  <div className='pb-xs text-user-blue'>
+                  {projectLink && (
+                    <Link
+                      href={projectLink}
+                      target={'_blank'}
+                      rel={'noopener noreferrer'}
+                    >
+                      robwegh.com
+                    </Link>
+                  )}
+                </div>
                   <div className='text-body-md-D 2xl:text-body-D whitespace-pre-line'>
                     {documentToReactComponents(ProjectDescription)}
                   </div>
