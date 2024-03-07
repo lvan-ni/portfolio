@@ -18,6 +18,7 @@ export interface TypePortfolioProjectsPageFields {
     titleImage?: EntryFieldTypes.AssetLink;
     projectImages?: EntryFieldTypes.Array<EntryFieldTypes.AssetLink>;
     projectLink?: EntryFieldTypes.Symbol;
+    projectLinkName?: EntryFieldTypes.Symbol;
 }
 
 export type TypePortfolioProjectsPageSkeleton = EntrySkeletonType<TypePortfolioProjectsPageFields, "portfolioProjectsPage">;

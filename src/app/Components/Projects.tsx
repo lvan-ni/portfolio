@@ -22,7 +22,8 @@ const Projects = async () => {
       <section>
         {projects.map((project) => {
           const ProjectTitle = project.fields.projectTitle?.toString();
-          const projectLink = project.fields.projectLink?.toString() as string;
+          const projectLink = project.fields.projectLink?.toString();
+          const projectLinkName = project.fields.projectLinkName?.toString();
           const ProjectDescription = project.fields.description;
           const TitleImage = project.fields.titleImage as IImage;
           if (!ProjectDescription) return null;
@@ -49,7 +50,7 @@ const Projects = async () => {
                     type='video/mp4'
                   />
                 </video>
-                <h3 className='project-title-lg pb-xs'>{ProjectTitle}</h3>
+                <h3 className='project-title-lg pb-1'>{ProjectTitle}</h3>
                 <div className='pb-4 text-user-blue'>
                   {projectLink && (
                     <Link
@@ -57,7 +58,7 @@ const Projects = async () => {
                       target={'_blank'}
                       rel={'noopener noreferrer'}
                     >
-                      robwegh.com
+                      {projectLinkName}
                     </Link>
                   )}
                 </div>
@@ -89,16 +90,16 @@ const Projects = async () => {
                 <div className='flex flex-col items-start'>
                   <h3 className='project-title-lg'>{ProjectTitle}</h3>
                   <div className='pb-4 text-user-blue'>
-                  {projectLink && (
-                    <Link
-                      href={projectLink}
-                      target={'_blank'}
-                      rel={'noopener noreferrer'}
-                    >
-                      robwegh.com
-                    </Link>
-                  )}
-                </div>
+                    {projectLink && (
+                      <Link
+                        href={projectLink}
+                        target={'_blank'}
+                        rel={'noopener noreferrer'}
+                      >
+                        {projectLinkName}
+                      </Link>
+                    )}
+                  </div>
                   <div className='text-body whitespace-pre-line'>
                     {documentToReactComponents(ProjectDescription)}
                   </div>
@@ -130,16 +131,16 @@ const Projects = async () => {
                     {ProjectTitle}
                   </h3>
                   <div className='pb-xs text-user-blue'>
-                  {projectLink && (
-                    <Link
-                      href={projectLink}
-                      target={'_blank'}
-                      rel={'noopener noreferrer'}
-                    >
-                      robwegh.com
-                    </Link>
-                  )}
-                </div>
+                    {projectLink && (
+                      <Link
+                        href={projectLink}
+                        target={'_blank'}
+                        rel={'noopener noreferrer'}
+                      >
+                        {projectLinkName}
+                      </Link>
+                    )}
+                  </div>
                   <div className='text-body-md-D 2xl:text-body-D whitespace-pre-line'>
                     {documentToReactComponents(ProjectDescription)}
                   </div>
