@@ -37,7 +37,7 @@ const APIBasics = () => {
         // console.log(myObject.rotation);
       },
     });
-    
+
     return () => {
       lvan.revert();
       grow.revert();
